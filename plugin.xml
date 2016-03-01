@@ -23,7 +23,7 @@
 
         <header-file src="src/ios/KTPlaySDK/KTPlay/KTAccountManager.h" />
         <header-file src="src/ios/KTPlaySDK/KTPlay/KTChat.h" />
-        <header-file src="src/ios/KTPlaySDK/KTPlay/KTFriendsship.h" />
+        <header-file src="src/ios/KTPlaySDK/KTPlay/KTFriendship.h" />
         <header-file src="src/ios/KTPlaySDK/KTPlay/KTLeaderboard.h" />
         <header-file src="src/ios/KTPlaySDK/KTPlay/KTPlay.h" />
         <header-file src="src/ios/KTPlaySDK/KTPlay/KTTagging.h" />
