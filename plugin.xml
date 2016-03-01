@@ -129,5 +129,13 @@
         <framework src="libz.1.2.5.dylib" />
         <framework src="libstdc++.6.0.9.dylib" />
         <framework src="libresolv.dylib" />
+
+        <!--
+        <resource-file src="src/ios/SNSPlugins/ktplayPluginWeChat/com.ktplay.plugin.wechat.bundle" />
+        <header-file src="src/ios/SNSPlugins/ktplayPluginWeChat/WeChatSDK_1.6/WXApi.h" />
+        <header-file src="src/ios/SNSPlugins/ktplayPluginWeChat/WeChatSDK_1.6/WXApiObject.h" />
+        <source-file src="src/ios/SNSPlugins/ktplayPluginWeChat/WeChatSDK_1.6/libWeChatSDK.a" framework="true" />
+        <source-file src="src/ios/SNSPlugins/ktplayPluginWeChat/libKtplayPluginWeChat.a" framework="true" />
+        -->
     </platform>
 </plugin>
