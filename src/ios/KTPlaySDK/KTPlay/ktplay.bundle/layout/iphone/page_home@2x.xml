@@ -1,0 +1,96 @@
+<Page>
+    <Resources>
+        <StyleSheet>
+        </StyleSheet>
+    </Resources>
+    
+    <Layout>
+        <UIView id="superView" >
+            <UIScrollView id="homeScrollView" mdoutlet="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO">
+                <Constraints>
+                    <Constraint attribute="edges" target="superView"></Constraint>
+                    <Constraint attribute="width" target="superView"></Constraint>
+                </Constraints>
+                
+                <UIView id="contentView" >
+                    <Constraints>
+                        <Constraint attribute="edges" target="homeScrollView" />
+                        <Constraint attribute="width" target="homeScrollView" />
+                    </Constraints>
+                    
+                    <!--置顶话题 -->
+                    <UIView id="topWrapperView">
+                        <Constraints>
+                            <Constraint attribute="top" target="contentView" />
+                            <Constraint attribute="left" target="contentView" />
+                            <Constraint attribute="right" target="contentView"/>
+                            <Constraint attribute="height" constant="{{dimen:home_top_height}}"/>
+                        </Constraints>
+                        
+                        <KTPageContralScrollView id="pageContralScrollView" mdoutlet="YES">
+                            <Constraints>
+                                <Constraint attribute="edges" target="topWrapperView"/>
+                            </Constraints>
+                        </KTPageContralScrollView>
+
+                    </UIView>
+                    
+                    <!-- 视频 -->
+                    <UIView id="videoWrapView" mdoutlet="YES">
+                        <Constraints>
+                            <Constraint attribute="top" target="topWrapperView" targetAttribute="bottom"/>
+                            <Constraint attribute="left" target="contentView" />
+                            <Constraint attribute="right" target="contentView" />
+                        </Constraints> 
+                        
+                    </UIView>
+                   
+                    
+                    <!-- 专题 -->
+                    <UIView id="collectionWrapView" mdoutlet="YES">
+                        <Constraints>
+                            <Constraint attribute="top" target="videoWrapView" targetAttribute="bottom" />
+                            <Constraint attribute="left" target="contentView" />
+                            <Constraint attribute="right" target="contentView" /> 
+                        </Constraints>
+                        
+                    </UIView>
+                    
+                    <!-- 热图-->
+                    <UIView id="hotPicWrapView" mdoutlet="YES">
+                        <Constraints>
+                            <Constraint attribute="top" target="collectionWrapView" targetAttribute="bottom"/>
+                            <Constraint attribute="left" target="contentView" />
+                            <Constraint attribute="right" target="contentView" />
+                        </Constraints>
+                    </UIView>
+                    
+                    
+                    <!-- 推荐游戏-->
+                    <UIView id="gamesWrapView" mdoutlet="YES">
+                        <Constraints>
+                            <Constraint attribute="top" target="hotPicWrapView" targetAttribute="bottom"/>
+                            <Constraint attribute="left" target="contentView" />
+                            <Constraint attribute="right" target="contentView"/>
+                        </Constraints>
+                        
+                    </UIView>
+                    
+
+                    <!-- 活跃用户-->
+                    <UIView id="activeUserWrapView" mdoutlet="YES">
+                        <Constraints>
+                            <Constraint attribute="top" target="gamesWrapView" targetAttribute="bottom" />
+                            <Constraint attribute="bottom" target="contentView"/>
+                            <Constraint attribute="left" target="contentView" />
+                            <Constraint attribute="right" target="contentView"/>
+                        </Constraints>
+                    </UIView> 
+
+                </UIView>
+            </UIScrollView>
+        </UIView>
+
+    </Layout>
+</Page>
+

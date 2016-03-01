@@ -1,0 +1,9 @@
+<Stylesheet>
+    <Style name="contentLableStyle">
+        <Setter property="textColor" value="{{color:text_color_black}}" />
+        <Setter property="font" value="{{font:primary_s_font}}" />
+    </Style>
+    <Style name="clipsViewStyle">
+        <Setter property="clipsToBounds" value="YES"/>
+    </Style>
+</Stylesheet>
