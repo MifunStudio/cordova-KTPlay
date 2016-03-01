@@ -29,23 +29,23 @@
         <header-file src="src/ios/KTPlaySDK/KTPlay/KTTagging.h" />
         <header-file src="src/ios/KTPlaySDK/KTPlay/KTUser.h" />
 
-        <source-file src="src/ios/KTPlaySDK/KTPlay/libKtplay.a" framework="true" />
+        <source-file src="src/ios/KTPlaySDK/KTPlay/libKtplay.a" framework="true" compiler-flags="-fno-objc-arc" />
 
         <header-file src="src/ios/KTPlaySDK/Libraries/Aspects_1.4.1/Aspects.h" />
         <source-file src="src/ios/KTPlaySDK/Libraries/Aspects_1.4.1/Aspects.m" />
         <header-file src="src/ios/KTPlaySDK/Libraries/CAEAGLLayerCategory/CAEAGLLayer+RetainedBacking.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/CAEAGLLayerCategory/CAEAGLLayer+RetainedBacking.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/CAEAGLLayerCategory/CAEAGLLayer+RetainedBacking.m" compiler-flags="-fno-objc-arc" />
         <header-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDB.h" />
         <header-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabase.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabase.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabase.m" compiler-flags="-fno-objc-arc" />
         <header-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabaseAdditions.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabaseAdditions.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabaseAdditions.m" compiler-flags="-fno-objc-arc" />
         <header-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabasePool.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabasePool.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabasePool.m" compiler-flags="-fno-objc-arc" />
         <header-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabaseQueue.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabaseQueue.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMDatabaseQueue.m" compiler-flags="-fno-objc-arc" />
         <header-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMResultSet.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMResultSet.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/FMDB_2.5/fmdb/FMResultSet.m" compiler-flags="-fno-objc-arc" />
         <header-file src="src/ios/KTPlaySDK/Libraries/KTNetworking_2.6.3/KTNetworking/KTCoreNetworking.h" />
         <header-file src="src/ios/KTPlaySDK/Libraries/KTNetworking_2.6.3/KTNetworking/KTHTTPRequestOperation.h" />
         <source-file src="src/ios/KTPlaySDK/Libraries/KTNetworking_2.6.3/KTNetworking/KTHTTPRequestOperation.m" />
@@ -91,13 +91,13 @@
         <header-file src="src/ios/KTPlaySDK/Libraries/Masonry_0.6.3/ViewController+MASAdditions.h" />
         <source-file src="src/ios/KTPlaySDK/Libraries/Masonry_0.6.3/ViewController+MASAdditions.m" />
         <header-file src="src/ios/KTPlaySDK/Libraries/OAuth/NSData+Base64.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/OAuth/NSData+Base64.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/OAuth/NSData+Base64.m" compiler-flags="-fno-objc-arc" />
         <header-file src="src/ios/KTPlaySDK/Libraries/OAuth/OAuth+Additions.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/OAuth/OAuth+Additions.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/OAuth/OAuth+Additions.m" compiler-flags="-fno-objc-arc" />
         <header-file src="src/ios/KTPlaySDK/Libraries/OAuth/OAuthCore.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/OAuth/OAuthCore.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/OAuth/OAuthCore.m" compiler-flags="-fno-objc-arc" />
         <header-file src="src/ios/KTPlaySDK/Libraries/OpenUDID/OpenUDID.h" />
-        <source-file src="src/ios/KTPlaySDK/Libraries/OpenUDID/OpenUDID.m" />
+        <source-file src="src/ios/KTPlaySDK/Libraries/OpenUDID/OpenUDID.m" compiler-flags="-fno-objc-arc" />
 
         <framework src="CoreData.framework" />
         <framework src="Photos.framework" weak="true" />
@@ -127,7 +127,7 @@
         <framework src="libsqlite3.dylib" />
         <framework src="libz.dylib" />
         <framework src="libz.1.2.5.dylib" />
-        <framework src="libstdc++.6.0.9" />
+        <framework src="libstdc++.6.0.9.dylib" />
         <framework src="libresolv.dylib" />
     </platform>
 </plugin>
