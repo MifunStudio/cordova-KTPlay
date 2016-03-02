@@ -1,2 +1,1 @@
-libKtplay.a filter=lfs diff=lfs merge=lfs -text
 src/ios/KTPlaySDK/KTPlay/libKtplay.a filter=lfs diff=lfs merge=lfs -text
